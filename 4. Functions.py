@@ -118,6 +118,25 @@ greet ("Shivam" ",")
 greet ("Imran"+",", "Good Night")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def calcute_age():
     age = 18
     if age >= 18:
