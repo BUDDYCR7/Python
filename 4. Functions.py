@@ -118,6 +118,29 @@ greet ("Shivam" ",")
 greet ("Imran"+",", "Good Night")
 
 
+# Write a lambda function that returns the square of a number.
+num = lambda x: x*x
+print (num (5))
+
+
+# Create a lambda function to add two numbers.
+add = lambda x,y : x+y
+print (add (144,62))
+
+
+# Given two numbers, return the larger one.
+larger = lambda a,b : a if a>b else b
+print (larger (2678,890))
+
+
+# Check Even or Odd.
+find = lambda i : "Even" if i % 2 == 0 else "Odd"
+print (find (3))
+
+
+# Multiply three numbers.
+ai = lambda c,i,d : c*i*d
+print (ai (13,14,34))
 
 
 
