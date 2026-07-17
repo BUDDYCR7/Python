@@ -2,10 +2,12 @@
 for i in range (1,21):
     print (i)
 
+
 # Print even numbers.
 for i in range (2,21):
     if i % 2 == 0:
         print (i)
+
 
 # Find the largest number.
 numbers = [25, 70, 15, 90, 40]
@@ -15,7 +17,8 @@ for i in numbers:
         largest = i
 print (largest)
 
-# # Count vowels in a word.
+
+# Count vowels in a word.
 word = input("Enter a word: ")
 count = 0
 for letter in word:
@@ -23,19 +26,22 @@ for letter in word:
         count += 1
 print ("Total vowels: ", count)
 
-# # Reverse a string.
-Word = "Yadav"
-ch = Word[::-1]
-print (ch)
 
-# # Sum a list.
+# Reverse a string.
+Word = "Yadav"
+character = Word[::-1]
+print (character)
+
+
+# Sum a list.
 numbers = [7, 10, 11]
 total = 0
 for i in numbers:
     total += i
 print (total)
 
-# # Find the maximum number in a list.
+
+# Find the maximum number in a list.
 numbers = [25, 70, 15, 90, 40]
 largest = numbers[0]
 for i in numbers:
@@ -43,10 +49,12 @@ for i in numbers:
         largest = i
 print (largest)
 
+
 # Print a multiplication table.
 table = int (input ("Enter the table: "))
 for i in range (1,11):
     print (table, "x", i, "=", table*i)
+
 
 # Check whether a number is prime.
 prime = int(input("Enter a number: "))
@@ -60,12 +68,14 @@ else:
     else:
         print("Prime Number")
 
+
 # Sum of a list.
 data = [4, 5, 6]
 total = 0
 for i in data:
     total += i
 print (total)
+
 
 # Find the largest number in a list.
 num = [10, 20, 30]
@@ -75,6 +85,7 @@ for i in (num):
         largest = i
 print (largest)
 
+
 # Calculate the factorial of a number.
 def factorial_iterative(n):
    if n < 0:
@@ -83,6 +94,8 @@ def factorial_iterative(n):
    for i in range(1, n + 1):
        result *= i
    return result
+
+
 # Example usage
 number = int (input("Enter number: "))
 print(f"The factorial of {number} is: {factorial_iterative(number)}")

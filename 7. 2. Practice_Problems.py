@@ -42,7 +42,8 @@ else:
 for i in range(1,6):
     print ("#"*i)
 
-# # Wrong 
+
+# Wrong 
 for i in range(1,6):
     print ("="*i)
 

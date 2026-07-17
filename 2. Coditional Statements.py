@@ -1,6 +1,7 @@
 a = input ("First Name: ")
 print ("length of the word is: ", len(a))
 
+
 b = ("i have 100$, and i paid 50$ to shiv, 20$ to imran, and 10$ to shashank, how much do i have now")
 print (b. count("$"))
 
@@ -31,8 +32,10 @@ if (age >= 55):
 else:
     print ("cannot drive")
 
+
 a = 'shivam'
 print (type (a))
+
 
 name = "Shivam"
 age = 22
@@ -44,23 +47,10 @@ print ("I am:",age)
 print ("I am doing:", course)
 print ("Currently i am in a:", status)
 
-# Relational/Comparision Operator
-a = 1
-b = 5
-print (a==b)
-
-# Assignment Operator
-x=4
-x*=27
-print (x)
-
-# Identity Operator
-c=50
-d=90
-print (c is not d)
 
 h = "hello"
 print (h [1:4])
+
 
 age = 17
 
@@ -69,8 +59,40 @@ if (age >=18):
 else:
     print ("Not Eligible for Vote")
 
-list = [2,3,4,5,6,7,]
-print (10 not in list)
 
-i = 22
-print (22 is i)
+age = 17
+if (age < 18):
+    print("Minor")
+elif (age == 18):
+    print ("Teen")
+else:
+   print ("Adult")
+
+
+age = 17
+print("Minor" if age < 18 else "Teen" if age == 18 else "Adult")
+
+
+Health = 100
+print ("Dead" if Health <= 0 else "Alive")
+
+
+Weapon = "yes"
+if(Weapon != "yes"):
+    print ("Armed")
+else:
+    print ("Unarmed")
+
+Weapon = "yes"
+print ("Armed" if Weapon!="yes" else"Unarmed")
+
+
+i = int (input ("Enter your Age: "))
+if i >= 18:
+    print ("Eligible for Driving")
+else:
+    print ("Not Eligible for Driving")
+
+
+i = int (input ("Enter your Age: "))
+print ("Eligible for Driving" if i >= 18 else "Not Eligible for Driving")
