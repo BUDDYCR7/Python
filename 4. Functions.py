@@ -1,3 +1,34 @@
+def enter(): # "()" Parentheses", Used for parameter. ":" Colon tells Python a block starts here.
+    c = input ("Wellcome: ")
+    print ("Hi", c)
+enter()
+
+
+# Calling a Function
+def greet():
+    print("Hello")
+greet() # Calling a Function.
+
+
+# Use parameter names. Advantages:- More readable, Order doesn't matter, Easier for large functions.
+def employee(name, salary, department): # Defining a function. "employee" Function name, choose a meaningful name.
+    print(name)
+    print(salary)
+    print(department)
+employee(department="IT", salary=50000, name="Shivam") # Parameter names. Function called.
+
+
+def add():
+    a = int (input ("Enter the first number: "))
+    b = int (input ("Enter the second number: "))
+    print(a+b)
+    print(a*b)
+    print(a-b)
+    print(a/b)
+    print(a%b)
+add()
+
+
 def sum (a, b):
     s =a+b
     return s
@@ -15,37 +46,6 @@ def add (a, b):
     print(result)
 
 add(13, 2)
-
-
-# Calling a Function
-def greet():
-    print("Hello")
-greet()
-
-
-def add():
-    a = int (input ("Enter the first number: "))
-    b = int (input ("Enter the second number: "))
-    print(a+b)
-    print(a*b)
-    print(a-b)
-    print(a/b)
-    print(a%b)
-add()
-
-
-def enter():
-    c = input ("Wellcome: ")
-    print ("Hi", c)
-enter()
-
-
-# Use parameter names. Advantages:- More readable, Order doesn't matter, Easier for large functions.
-def employee(name, salary, department):
-    print(name)
-    print(salary)
-    print(department)
-employee(department="IT", salary=50000, name="Shivam") # Parameter names.
 
 
 # **kwargs
@@ -80,6 +80,44 @@ def profile(**data):
 
 
 # My Practice Solution.
+
+# Positional Arguments.
+# Create a function introduce(name, age),
+# Call the function using positional arguments.
+def introduce(name, age):
+    print (name)
+    print (age)
+    
+introduce("Shivam",22)
+
+
+# Keyword Arguments.
+# Create a function student(name, course),
+# Call it using keyword arguments.
+def student(name, course):
+    print ("Name:", name)
+    print ("Course:", course)
+    
+student(name = "Shivam", course = "Python")
+
+
+# Default Arguments
+# Create a function, greet(name, message="Good Morning")
+def greet (name, message="Good Morning"):
+    print (name, message)
+    
+greet ("Shivam" ",")
+
+# Default Arguments, Override the default.
+# Create a function, greet(name, message="Good Morning")
+# Override the default
+def greet (name, message="Good Morning"):
+    print (name, message)
+    
+greet ("Shivam" ",")
+greet ("Imran"+",", "Good Night")
+
+
 def calcute_age():
     age = 18
     if age >= 18:
@@ -124,3 +162,11 @@ def even():
         print ("ODD")
 even()
 
+
+def pattern():
+    print ("-"*30)
+    
+print ("Menu")
+pattern()
+print ("End")
+pattern()
