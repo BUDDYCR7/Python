@@ -143,23 +143,6 @@ ai = lambda c,i,d : c*i*d
 print (ai (13,14,34))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def calcute_age():
     age = 18
     if age >= 18:
